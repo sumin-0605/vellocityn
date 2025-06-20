@@ -27,7 +27,7 @@
         <div class="icons">
             <a href="search.html"><i class="fa fa-search"></i></a>
             <a href="login.html"><i class="fa fa-user"></i></a>
-            <button class="hamburger-toggle" id="hamburgerToggleDesktop" type="button">
+            <button class="hambur ger-toggle" id="hamburgerToggleDesktop" type="button">
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
@@ -42,13 +42,13 @@
 
 
             <video class="hero-video" autoplay muted loop playsinline>
-                <source src="./Video/영상 최종 마지막.mp4" type="video/mp4" />
+                <source src="./Video/desktop.mp4" type="video/mp4" />
             </video>
         </div>
 
         <div class="movie-mobile">
             <video class="hero-video" autoplay muted loop playsinline>
-                <source src="./Video/휴대폰버전.mp4" type="video/mp4" />
+                <source src="./Video/phone.mp4" type="video/mp4" />
             </video>
         </div>
         <div class="hero-text">
@@ -272,7 +272,6 @@
 
 
 <script>
-// ✅ 문제 1, 3, 4, 5, 그리고 전체 줄 문제까지 해결하는 스크립트와 설명
 
 // DOM 요소 불러오기
 const header = document.querySelector('.header');
@@ -284,12 +283,12 @@ const sidebarOverlay = document.getElementById('sidebarOverlay');
 const videoToggle = document.getElementById('videoToggle');
 const videoElements = document.querySelectorAll('.hero-video');
 
-// ✅ 줄 생기는 문제 해결용 - 전체 줄 제거 (특정 css에서 text-decoration: line-through 일 수 있음)
+// 줄 생기는 문제 해결용 - 전체 줄 제거
 document.querySelectorAll('*').forEach(el => {
   el.style.textDecoration = 'none';
 });
 
-// ✅ 공통: header 배경 및 글자 색 갱신
+// 공통: header 배경 및 글자 색 갱신
 function updateHeaderState() {
   const isSidebarOpen = sidebar.classList.contains('active');
   const isScrolled = window.scrollY > 50;
@@ -310,7 +309,7 @@ function updateHeaderState() {
   }
 
   // 햄버거 버튼 색 (header.scrolled 클래스 활용)
-// ✅ 공통 햄버거 색상 제어
+//m공통 햄버거 색상 제어
 const isDesktop = window.innerWidth >= 768;
 const isMobile = window.innerWidth < 768;
 
@@ -331,7 +330,7 @@ if (isMobile) {
 }
 
 }
-// ✅ 모바일 하단 네비게이션 상태에 따라 햄버거 메뉴 색상 조정
+// 모바일 하단 네비게이션 상태에 따라 햄버거 메뉴 색상 조정
 if (window.innerWidth < 768) {
   const isNavScrolled = nav.classList.contains("scrolled");
 
@@ -341,10 +340,10 @@ if (window.innerWidth < 768) {
 }
 
 
-// ✅ 스크롤 이벤트 처리
+// 스크롤 이벤트 처리
 window.addEventListener('scroll', updateHeaderState);
 
-// ✅ 햄버거 버튼으로 사이드바 토글하는 함수
+// 햄버거 버튼으로 사이드바 토글하는 함수
 function toggleSidebar(btn) {
   btn.classList.toggle('active');
   sidebar.classList.toggle('active');
@@ -360,17 +359,17 @@ function toggleSidebar(btn) {
   }
 }
 
-// ✅ 데스크탑 햄버거 버튼 클릭 시
+//  데스크탑 햄버거 버튼 클릭 시
 if (hamburgerBtnDesktop) {
   hamburgerBtnDesktop.addEventListener('click', () => toggleSidebar(hamburgerBtnDesktop));
 }
 
-// ✅ 모바일 햄버거 버튼 클릭 시
+//  모바일 햄버거 버튼 클릭 시
 if (hamburgerBtnMobile) {
   hamburgerBtnMobile.addEventListener('click', () => toggleSidebar(hamburgerBtnMobile));
 }
 
-// ✅ 오버레이 클릭 시 닫기
+//  오버레이 클릭 시 닫기
 sidebarOverlay.addEventListener('click', () => {
   hamburgerBtnDesktop?.classList.remove('active');
   hamburgerBtnMobile?.classList.remove('active');
@@ -381,7 +380,7 @@ sidebarOverlay.addEventListener('click', () => {
   videoToggle.style.zIndex = '10001';
 });
 
-// ✅ 영상 재생/일시정지 기능
+//  영상 재생/일시정지 기능
 let isPaused = false;
 videoToggle.addEventListener('click', () => {
   videoElements.forEach(video => {
@@ -391,7 +390,7 @@ videoToggle.addEventListener('click', () => {
   videoToggle.textContent = isPaused ? '▶' : '⏸';
 });
 
-// ✅ 최초 실행 시 상태 갱신
+//  최초 실행 시 상태 갱신
 updateHeaderState();
 </script>
 </body>
