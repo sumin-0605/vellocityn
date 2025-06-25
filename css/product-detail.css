@@ -1,4 +1,9 @@
 /* 기본 글꼴 및 여백 */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
