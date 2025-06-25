@@ -16,28 +16,31 @@
   <!-- 상세페이지 HTML 구조 -->
   <header class="top-nav">
     <div class="nav-top">
-      <div class="logo">VELOCITYN</div>
+      <a href="index.html" style="text-decoration: none; color: black;">
+        <div class="logo">VELOCITYN</div>
+      </a>
       <div class="nav-icons">
         <a href="search.html">
           <i class="fa fa-search"></i></a>
         <a href="shopping.html"><i class="fa fa-shopping-cart"></i></a>
         <button class="hamburger-toggle" id="hamburgerToggleDesktop" type="button">
-  <span class="line"></span>
-  <span class="line"></span>
-  <span class="line"></span>
-</button>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
 
       </div>
     </div>
 
     <nav class="nav-bottom">
       <ul class="nav-menu">
-        <li><a href="#">woman best</a></li>
-        <li><a href="#">man best</a></li>
-        <li><a href="#">의류</a></li>
-        <li><a href="#">신발</a></li>
-        <li><a href="#">용품</a></li>
+        <li><a href="#woman">woman best</a></li>
+        <li><a href="#man">man best</a></li>
+        <li><a href="#clothes">의류</a></li>
+        <li><a href="#shoes">신발</a></li>
+        <li><a href="#goods">용품</a></li>
       </ul>
+
     </nav>
   </header>
 
@@ -51,7 +54,7 @@
     </section>
 
     <!-- 카테고리별 상품 리스트 -->
-    <section class="category-section">
+    <section class="category-section" id="woman">
       <h2>woman best</h2>
       <div class="product-grid">
         <!-- 상품 카드들 -->
@@ -104,7 +107,7 @@
       <img src="./product-detail-page-img/model/남자모델2.png" alt="banner2">
       <img src="./product-detail-page-img/model/남자모델3.png" alt="banner3">
     </section>
-    <section class="category-section">
+    <section class="category-section" id="man">
       <h2>man best</h2>
       <div class="product-grid">
         <!-- 상품 카드들 -->
@@ -152,7 +155,7 @@
       <button class="btn-more">더 보기</button>
     </section>
 
-    <section class="category-section">
+    <section class="category-section" id="clothes">
       <h2>의류</h2>
       <div class="product-grid">
         <!-- 상품 카드들 -->
@@ -195,7 +198,7 @@
       <button class="btn-more">더 보기</button>
     </section>
 
-    <section class="category-section">
+    <section class="category-section" id="shoes">
       <h2>신발</h2>
       <div class="shoes-grid">
         <!-- 상품 카드들 -->
@@ -233,7 +236,7 @@
       <button class="btn-more">더 보기</button>
     </section>
 
-    <section class="category-section">
+    <section class="category-section" id="goods">
       <h2>용품</h2>
       <div class="product-grid">
         <!-- 상품 카드들 -->
@@ -279,142 +282,142 @@
 
   </main>
 
-      <!-- 푸터 -->
-    <footer class="footer">
-        <div class="footer-info">
-            <p>고객센터 : 0000-000-0000</p>
-            <p>주소지 : 서울시 어디구 어디로 123</p>
-        </div>
-        <div class="social-icons">
-            <a href="#"><img src="./img/footer_insta.png" alt="" /></a>
-            <a href="#"><img src="./img/footer_facebook.png" alt="" /></a>
-            <a href="#"><img src="./img/footer_youtube.png" alt="" /></a>
-            <a href="#"><img src="./img/footer_telle.png" alt="" /></a>
-        </div>
-        <ul class="footer-links">
-            <li><a href="#">이용약관</a></li>
-            <li><a href="#">개인정보처리방침</a></li>
-            <li><a href="#">청소년 보호정책</a></li>
-        </ul>
-    </footer>
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="footer-info">
+      <p>고객센터 : 0000-000-0000</p>
+      <p>주소지 : 서울시 어디구 어디로 123</p>
+    </div>
+    <div class="social-icons">
+      <a href="#"><img src="./img/footer_insta.png" alt="" /></a>
+      <a href="#"><img src="./img/footer_facebook.png" alt="" /></a>
+      <a href="#"><img src="./img/footer_youtube.png" alt="" /></a>
+      <a href="#"><img src="./img/footer_telle.png" alt="" /></a>
+    </div>
+    <ul class="footer-links">
+      <li><a href="#">이용약관</a></li>
+      <li><a href="#">개인정보처리방침</a></li>
+      <li><a href="#">청소년 보호정책</a></li>
+    </ul>
+  </footer>
 
 
-        <!-- 하단 네비게이션바 -->
-    <nav class="bottom-nav">
-        <a href="search.html"><i class="fa fa-search"></i><span></span></a>
-        <a href="shopping.html"><i class="fa fa-shopping-cart"></i><span></span></a>
-        <a href="login.html"><i class="fa fa-user"></i><span></span></a>
-        <button class="hamburger-toggle" id="hamburgerToggleMobile" type="button">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-        </button>
-    </nav>
+  <!-- 하단 네비게이션바 -->
+  <nav class="bottom-nav">
+    <a href="search.html"><i class="fa fa-search"></i><span></span></a>
+    <a href="shopping.html"><i class="fa fa-shopping-cart"></i><span></span></a>
+    <a href="login.html"><i class="fa fa-user"></i><span></span></a>
+    <button class="hamburger-toggle" id="hamburgerToggleMobile" type="button">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </button>
+  </nav>
 
-        <!-- 사이드바 -->
-    <div class="sidebar-overlay" id="sidebarOverlay"></div>
-    <aside class="sidebar" id="sidebar">
+  <!-- 사이드바 -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+  <aside class="sidebar" id="sidebar">
 
-        <ul class="sidebar-menu">
+    <ul class="sidebar-menu">
 
-            <li class="fade-item delay-1"><a href="index.html">홈</a></li>
-            <li class="fade-item delay-3"><a href="product-detail.html">쇼핑하기</a></li>
-            <li class="fade-item delay-4"><a href="login.html">로그인 / 회원가입</a></li>
-        </ul>
-    </aside>
-<script>
+      <li class="fade-item delay-1"><a href="index.html">홈</a></li>
+      <li class="fade-item delay-3"><a href="product-detail.html">쇼핑하기</a></li>
+      <li class="fade-item delay-4"><a href="login.html">로그인 / 회원가입</a></li>
+    </ul>
+  </aside>
+  <script>
     // DOM 요소 불러오기
-const header = document.querySelector('.top-nav');
-const nav = document.querySelector(".bottom-nav");
-const hamburgerBtnDesktop = document.getElementById('hamburgerToggleDesktop');
-const hamburgerBtnMobile = document.getElementById('hamburgerToggleMobile');
-const sidebar = document.getElementById('sidebar');
-const sidebarOverlay = document.getElementById('sidebarOverlay');
-const videoElements = document.querySelectorAll('.hero-video');
+    const header = document.querySelector('.top-nav');
+    const nav = document.querySelector(".bottom-nav");
+    const hamburgerBtnDesktop = document.getElementById('hamburgerToggleDesktop');
+    const hamburgerBtnMobile = document.getElementById('hamburgerToggleMobile');
+    const sidebar = document.getElementById('sidebar');
+    const sidebarOverlay = document.getElementById('sidebarOverlay');
+    const videoElements = document.querySelectorAll('.hero-video');
 
-// 줄 생기는 문제 해결용 - 전체 줄 제거
-document.querySelectorAll('*').forEach(el => {
-  el.style.textDecoration = 'none';
-});
+    // 줄 생기는 문제 해결용 - 전체 줄 제거
+    document.querySelectorAll('*').forEach(el => {
+      el.style.textDecoration = 'none';
+    });
 
-// 공통: header 배경 및 글자 색 갱신
-function updateHeaderState() {
-  const isSidebarOpen = sidebar.classList.contains('active');
-  const isScrolled = window.scrollY > 50;
+    // 공통: header 배경 및 글자 색 갱신
+    function updateHeaderState() {
+      const isSidebarOpen = sidebar.classList.contains('active');
+      const isScrolled = window.scrollY > 50;
 
-  if (isScrolled || isSidebarOpen) {
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
-  }
+      if (isScrolled || isSidebarOpen) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
 
-  // 하단 고정 메뉴 (모바일)
-  if (nav) {
-    if (window.scrollY > 10) {
-      nav.classList.add("scrolled");
-    } else {
-      nav.classList.remove("scrolled");
+      // 하단 고정 메뉴 (모바일)
+      if (nav) {
+        if (window.scrollY > 10) {
+          nav.classList.add("scrolled");
+        } else {
+          nav.classList.remove("scrolled");
+        }
+      }
+
+      // 햄버거 버튼 색 (header.scrolled 클래스 활용)
+      //m공통 햄버거 색상 제어
+      const isDesktop = window.innerWidth >= 768;
+      const isMobile = window.innerWidth < 768;
+
+      // 데스크탑: header 스크롤 여부로 판단
+      if (isDesktop) {
+        const desktopScrolled = header.classList.contains('scrolled');
+        document.querySelectorAll('#hamburgerToggleDesktop .line').forEach(line => {
+          line.style.backgroundColor = desktopScrolled ? 'black' : 'white';
+        });
+      }
+
     }
-  }
+    // 모바일 하단 네비게이션 상태에 따라 햄버거 메뉴 색상 조정
+    if (window.innerWidth < 768) {
+      const isNavScrolled = nav.classList.contains("scrolled");
 
-  // 햄버거 버튼 색 (header.scrolled 클래스 활용)
-//m공통 햄버거 색상 제어
-const isDesktop = window.innerWidth >= 768;
-const isMobile = window.innerWidth < 768;
-
-// 데스크탑: header 스크롤 여부로 판단
-if (isDesktop) {
-  const desktopScrolled = header.classList.contains('scrolled');
-  document.querySelectorAll('#hamburgerToggleDesktop .line').forEach(line => {
-    line.style.backgroundColor = desktopScrolled ? 'black' : 'white';
-  });
-}
-
-}
-// 모바일 하단 네비게이션 상태에 따라 햄버거 메뉴 색상 조정
-if (window.innerWidth < 768) {
-  const isNavScrolled = nav.classList.contains("scrolled");
-
-  document.querySelectorAll('#hamburgerToggleMobile .line').forEach(line => {
-    line.style.backgroundColor = isNavScrolled ? 'black' : 'white';
-  });
-}
+      document.querySelectorAll('#hamburgerToggleMobile .line').forEach(line => {
+        line.style.backgroundColor = isNavScrolled ? 'black' : 'white';
+      });
+    }
 
 
-// 스크롤 이벤트 처리
-window.addEventListener('scroll', updateHeaderState);
+    // 스크롤 이벤트 처리
+    window.addEventListener('scroll', updateHeaderState);
 
-// 햄버거 버튼으로 사이드바 토글하는 함수
-function toggleSidebar(btn) {
-  btn.classList.toggle('active');
-  sidebar.classList.toggle('active');
-  sidebarOverlay.classList.toggle('active');
-  updateHeaderState();
-  videoToggle.style.display = sidebar.classList.contains('active') ? 'none' : 'block';
+    // 햄버거 버튼으로 사이드바 토글하는 함수
+    function toggleSidebar(btn) {
+      btn.classList.toggle('active');
+      sidebar.classList.toggle('active');
+      sidebarOverlay.classList.toggle('active');
+      updateHeaderState();
+      videoToggle.style.display = sidebar.classList.contains('active') ? 'none' : 'block';
 
-}
+    }
 
-//  데스크탑 햄버거 버튼 클릭 시
-if (hamburgerBtnDesktop) {
-  hamburgerBtnDesktop.addEventListener('click', () => toggleSidebar(hamburgerBtnDesktop));
-}
+    //  데스크탑 햄버거 버튼 클릭 시
+    if (hamburgerBtnDesktop) {
+      hamburgerBtnDesktop.addEventListener('click', () => toggleSidebar(hamburgerBtnDesktop));
+    }
 
-//  모바일 햄버거 버튼 클릭 시
-if (hamburgerBtnMobile) {
-  hamburgerBtnMobile.addEventListener('click', () => toggleSidebar(hamburgerBtnMobile));
-}
+    //  모바일 햄버거 버튼 클릭 시
+    if (hamburgerBtnMobile) {
+      hamburgerBtnMobile.addEventListener('click', () => toggleSidebar(hamburgerBtnMobile));
+    }
 
-//  오버레이 클릭 시 닫기
-sidebarOverlay.addEventListener('click', () => {
-  hamburgerBtnDesktop?.classList.remove('active');
-  hamburgerBtnMobile?.classList.remove('active');
-  sidebar.classList.remove('active');
-  sidebarOverlay.classList.remove('active');
-  updateHeaderState();
-  videoToggle.style.display = 'block';
-  videoToggle.style.zIndex = '10001';
-});
-</script>
+    //  오버레이 클릭 시 닫기
+    sidebarOverlay.addEventListener('click', () => {
+      hamburgerBtnDesktop?.classList.remove('active');
+      hamburgerBtnMobile?.classList.remove('active');
+      sidebar.classList.remove('active');
+      sidebarOverlay.classList.remove('active');
+      updateHeaderState();
+      videoToggle.style.display = 'block';
+      videoToggle.style.zIndex = '10001';
+    });
+  </script>
 
 </body>
 
