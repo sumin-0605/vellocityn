@@ -7,7 +7,7 @@ html,
 body {
   width: 100%;
   overflow-x: hidden;
-  font-family: 'Pretendard', sans-serif;
+  font-family: "Pretendard", sans-serif;
 }
 
 body {
@@ -47,12 +47,24 @@ main {
 .nav-list a {
   text-decoration: none;
   color: #111;
+  transition: opacity 0.3s ease;
 }
 
+.nav-list a:hover {
+  opacity: 0.6;
+}
 .icons span {
   margin-left: 0.5rem;
   cursor: pointer;
 }
+.icons a i {
+  transition: opacity 0.3s ease;
+}
+
+.icons a:hover i {
+  opacity: 0.6;
+}
+
 
 .hero {
   /* background: url("../img/main_banner_test.jpg") no-repeat center center/cover; */
@@ -124,6 +136,14 @@ main {
   font-weight: bold;
   border-radius: 2rem;
   cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.herobutton1:hover {
+  opacity: 0.5;
+}
+.herobutton2:hover {
+  opacity: 0.5;
 }
 /* 상품나열열 */
 .exclusive {
@@ -147,11 +167,20 @@ main {
 .product-card {
   width: 80%;
   max-width: 300px;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.product-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
 .product-card img {
   width: 100%;
   height: auto;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
 }
 .exclusive-swiper {
   padding: 1rem 1rem 2rem;
@@ -171,6 +200,10 @@ main {
   border: none;
   border-radius: 2rem;
   cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+.view-all:hover {
+  opacity: 0.6;
 }
 /* 카테고리배너 */
 .categories {
@@ -192,6 +225,11 @@ main {
   width: 100%;
   display: block;
   border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover img {
+  transform: scale(1.05); /* 5% 확대 */
 }
 
 .category-card span {
@@ -369,8 +407,12 @@ main {
   font-size: 1.2rem;
   color: #111;
   font-weight: bold;
+  transition: opacity 0.3s ease;
 }
 
+.sidebar-menu a:hover {
+  opacity: 0.6;
+}
 .sidebar-toggle {
   position: fixed;
   bottom: 70px;
@@ -484,6 +526,26 @@ main {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
+/* 상단/하단 아이콘 공통 호버 효과 */
+.icons a:hover i,
+.bottom-nav a:hover i {
+  opacity: 0.6;
+}
+
+/* 부드러운 전환 효과 */
+.icons a i,
+.bottom-nav a i {
+  transition: opacity 0.3s ease;
+}
+
+.hamburger-toggle {
+  transition: opacity 0.3s ease;
+}
+
+.hamburger-toggle:hover {
+  opacity: 0.6;
+}
+
 /* 모바일 버전에서 상단 네비게이션 바 숨기기 미디어쿼리 */
 @media (max-width: 767px) {
   .header {
@@ -494,7 +556,7 @@ main {
 /* 모바일 버전 초과 미디어쿼리 (테블릿, 데탑) */
 @media (min-width: 768px) {
   .header {
-     position: fixed;
+    position: fixed;
     flex-direction: row;
     justify-content: space-between;
     background-color: transparent;
@@ -507,11 +569,11 @@ main {
     display: none;
   }
 
-    .nav-list a {
+  .nav-list a {
     color: white;
   }
   .icons span {
-    color: white; 
+    color: white;
   }
   .nav-list {
     flex-direction: row;
@@ -550,7 +612,7 @@ main {
     padding: 0;
   }
 
-   .movie-desktop {
+  .movie-desktop {
     display: block;
     height: 600px;
     margin-top: 20rem;
@@ -558,7 +620,7 @@ main {
   }
   /* 데탑버전 메인배너 */
   .hero {
-    height:45rem;
+    height: 45rem;
     position: relative;
   }
   .hero-text {
@@ -576,57 +638,51 @@ main {
 
   .icons {
     display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 2rem; 
-  width: auto; 
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+    width: auto;
   }
-.icons a {
-  color: white;
-}
+  .icons a {
+    color: white;
+  }
 
-.hamburger-toggle > .line {
-  margin: 0;
-}
-.logo {
-  margin: 0;
+  .hamburger-toggle > .line {
+    margin: 0;
+  }
+  .logo {
+    margin: 0;
+  }
 
-}
+  .sidebar {
+    width: 50%;
+    height: 100vh;
+    right: 0;
+    left: auto;
+    z-index: 9998;
+  }
 
-.sidebar {
-  width: 50%;
-  height: 100vh;
-right: 0;
-left: auto;
-z-index: 9998
-}
+  .sidebar-overlay {
+    z-index: 9997;
+  }
 
-.sidebar-overlay {
-  z-index: 9997; 
-}
+  .header.scrolled {
+    background-color: white;
+  }
 
-.header.scrolled {
-  background-color: white;
-}
+  .header.scrolled .nav-list a,
+  .header.scrolled .icons a i,
+  .header.scrolled .hamburger-toggle .line,
+  .header.scrolled .logo {
+    color: #111 !important;
+  }
 
-.header.scrolled .nav-list a,
-.header.scrolled .icons a i,
-.header.scrolled .hamburger-toggle .line,
-.header.scrolled .logo {
-  color: #111 !important;
-}
-
-.poster-area {
-
-  height: 50%;
- 
-}
-.hamburger-toggle.active .line {
-  background-color: black;
-}
-
-
-
+  .poster-area {
+    height: 50%;
+  }
+  .hamburger-toggle.active .line {
+    background-color: black;
+  }
 }
 
 /* 미디어쿼리 영상 모바일 */
@@ -647,4 +703,3 @@ z-index: 9998
     box-shadow: none;
   }
 }
-
